@@ -17,6 +17,7 @@ export function getCtxMock(mockOverride: { [key: string]: any } = {}) {
     hasProjectContext: true,
     manifest: testAppJson,
     projectDir: '.',
+    skipCredentialsCheck: false,
   };
   return merge(defaultMock, mockOverride);
 }
